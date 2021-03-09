@@ -4,6 +4,8 @@ const search = document.getElementById('search'),
   mealsEl = document.getElementById('meals'),
   resultHeading = document.getElementById('result-heading'),
   single_mealEl = document.getElementById('single-meal');
+const BASE_URL = 'https://www.themealdb.com/api/json/v1/1/'
+
 function getRandomMeal() {
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
       .then(res => res.json())
